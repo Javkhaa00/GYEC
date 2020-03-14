@@ -5,7 +5,7 @@ import useFastReloadIndicator from '@nicepack/react/indicator';
 
 import GlobalStyles from './components/GlobalStyles';
 import Home from './slides/Home';
-import About from './components/About';
+import About from './slides/About/index';
 
 function App() {
   return (
