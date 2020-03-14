@@ -5,6 +5,9 @@ import { groupToPairs } from '@/util';
 
 import Slide from '@/components/Slide';
 
+import teamMembers from './members.json';
+import TeamMember from './TeamMember';
+
 const Container = styled(Slide)`
   color: white;
   background-color: var(--primary-color);
@@ -14,12 +17,6 @@ const MemberList = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-`;
-const MemberPicture = styled.img`
-  --picture-size: 200px;
-  height: var(--picture-size);
-  width: var(--picture-size);
-  margin: 10px;
 `;
 
 const Title = styled.h1`
@@ -39,16 +36,6 @@ const Col = styled.div`
   flex-flow: column wrap;
 `;
 
-const teamMembers = [
-  'ezka',
-  'oleg',
-  'javkhaa',
-  'enhjin',
-  'erdmee',
-  'shijka',
-  'gulnvr',
-  'kongro',
-];
 function About() {
   return (
     <Container id="about">
@@ -59,9 +46,7 @@ function About() {
       </Description>
       <MemberList>
         {groupToPairs(
-          teamMembers.map(member => (
-            <MemberPicture key={member} src={`/assets/members/${member}.jpg`} />
-          )),
+          teamMembers.map(member => <TeamMember data={member} />),
         ).map((children, i) => (
           <Col key={i.toString()}>{children}</Col>
         ))}
