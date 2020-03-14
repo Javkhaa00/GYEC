@@ -9,7 +9,8 @@ const Container = styled(Slide)`
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 'grid grid grid grid' 'grid grid grid grid';
 `;
-const Grid = styled.div`
+
+const MemberList = styled.div`
   display: grid;
   align-items: center;
   justify-items: center;
@@ -17,7 +18,6 @@ const Grid = styled.div`
   grid-template-rows: 2fr 2fr;
   grid-area: grid;
 `;
-
 const MemberPicture = styled.img`
   --picture-size: 200px;
   height: var(--picture-size);
@@ -37,11 +37,11 @@ const teamMembers = [
 function About() {
   return (
     <Container>
-      <Grid>
+      <MemberList>
         {teamMembers.map(member => (
           <MemberPicture src={`/assets/members/${member}.jpg`} />
         ))}
-      </Grid>
+      </MemberList>
     </Container>
   );
 }
