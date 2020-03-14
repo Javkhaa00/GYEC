@@ -1,0 +1,42 @@
+[
+  {
+    "name": "B.Ezenbaatar",
+    "nickname": "ezka",
+    "description": "Senior year student at Olonlog Academy high school. Team leader, 3Ddrawing, electronics and mechanics"
+  },
+  {
+    "name": "G.Zolboobayar",
+    "nickname": "oleg",
+    "description": "11th grade student at Nest high school. Full-stack developer, infosec analyst"
+  },
+  {
+    "name": "E.Munkh-Javhlan",
+    "nickname": "javkhaa",
+    "description": "Senior year student at 72nd high school. Software developer"
+  },
+  {
+    "name": "B.Enkhjin",
+    "nickname": "enhjin",
+    "description": "Senior at Shine Mongol Koosen. Database, animation, statistics"
+  },
+  {
+    "name": "E.Erdemtugs",
+    "nickname": "erdmee",
+    "description": "Senior year student at Orkhon Empathy high school. Statistics, database, animation"
+  },
+  {
+    "name": "B.Shijirbum",
+    "nickname": "shijka",
+    "description": "Senior at Shine Mongol Koosen. Database, statistics"
+  },
+  {
+    "name": "A.Gulnur",
+    "nickname": "gulnvr",
+    "description": "Senior year student at Darkhan Empathy high school. Statistics, animation"
+  },
+  {
+    "name": "M.Khongorzul",
+    "nickname": "kongro",
+    "description": "Senior year student at 84th school. Animation, database, statistics"
+  }
+]
