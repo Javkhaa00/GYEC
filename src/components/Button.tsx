@@ -6,6 +6,7 @@ export default styled.button`
   height: 40px;
   border: none;
   cursor: pointer;
+  font-size: 0.9rem;
   border-radius: 2px;
   background-color: var(--primary-color);
 `;
