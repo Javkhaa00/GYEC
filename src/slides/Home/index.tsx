@@ -7,7 +7,7 @@ import NavBar from '@/components/NavBar';
 const Container = styled.div`
   width: 100%;
   color: white;
-  height: calc(100vw * 0.525716258198136);
+  height: var(--slide-height);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
