@@ -31,6 +31,7 @@ const TitleContainer = styled.div`
   justify-content: space-around;
 `;
 const Title = styled.h1`
+  font-size: 2rem;
   font-style: normal;
   font-weight: 900;
   font-family: Raleway;
