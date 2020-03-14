@@ -44,8 +44,8 @@ function NavBar() {
       </a>
       <Navigation>
         <a href="#home">Home</a>
-        <a href="#about">About us</a>
         <a href="#product">Product</a>
+        <a href="#about">About us</a>
         <a href="#contact">Contact us</a>
       </Navigation>
     </Container>

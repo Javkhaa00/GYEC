@@ -49,7 +49,7 @@ Contact.propTypes = {
 
 function ContactUs() {
   return (
-    <Container>
+    <Container id="contact">
       <Title>Contact us</Title>
       <Contact name="Phone number">
         <a href="tel:+97699135563">+976 99135563</a>
