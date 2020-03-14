@@ -5,6 +5,7 @@ import GlobalStyles from './components/GlobalStyles';
 import Home from './slides/Home';
 import About from './slides/About';
 import Product from './slides/Product';
+import ContactUs from './slides/ContactUs';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <Product />
       <About />
+      <ContactUs />
     </>
   );
 }
