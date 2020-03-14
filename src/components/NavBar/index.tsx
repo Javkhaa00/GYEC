@@ -28,9 +28,7 @@ const Navigation = styled.nav`
   > a {
     color: white;
     margin: 0 15px;
-    outline: none;
     font-weight: 600;
-    text-decoration: none;
     @media screen and (max-width: 550px) {
       margin: 0 5px;
       font-size: 0.7rem;
@@ -41,7 +39,9 @@ const Navigation = styled.nav`
 function NavBar() {
   return (
     <Container>
-      <Logo src="/assets/logo.png" />
+      <a href="#home">
+        <Logo src="/assets/logo.png" />
+      </a>
       <Navigation>
         <a href="#home">Home</a>
         <a href="#about">About us</a>
