@@ -13,6 +13,7 @@ const Container = styled(Slide)`
 
 const MemberList = styled.div`
   display: flex;
+  max-width: 900px;
   flex-flow: row wrap;
   justify-content: center;
 `;

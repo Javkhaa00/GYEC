@@ -27,7 +27,7 @@ const ProductContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding: 20px 40px;
 `;
@@ -38,6 +38,7 @@ const FeaturesColumn = styled.div`
   justify-content: space-between;
 `;
 const ProductPicture = styled.img`
+  margin: 0 15px 15px 0;
   display: block;
   max-width: 400px;
   background-image: url('/assets/shocklance.png');
@@ -45,7 +46,7 @@ const ProductPicture = styled.img`
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     max-width: calc(100vw - 80px);
     margin-bottom: 10px;
   }
@@ -59,6 +60,7 @@ function Product() {
         <Title>Shocklance</Title>
       </ProductNameContainer>
       <ProductContainer>
+        <ProductPicture src="/assets/shocklance.png" />
         <FeaturesColumn>
           <Feature
             icon="/assets/features/voltage.svg"
@@ -70,9 +72,6 @@ function Product() {
             title="24 hour"
             description="To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it."
           />
-        </FeaturesColumn>
-        <ProductPicture src="/assets/shocklance.png" />
-        <FeaturesColumn>
           <Feature
             icon="/assets/features/smart-watch.png"
             title="Smart watch"

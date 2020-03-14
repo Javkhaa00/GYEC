@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 const Container = styled.div`
   width: 230px;
   display: flex;
+  margin-bottom: 10px;
   flex-direction: row;
   justify-content: space-between;
 `;
