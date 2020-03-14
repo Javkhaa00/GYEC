@@ -47,7 +47,7 @@ const ArrowContainer = styled.div`
 
 function Home() {
   return (
-    <Container>
+    <Container id="home">
       <NavBar />
       <TitleContainer>
         <Title>Nani</Title>
