@@ -1,0 +1,42 @@
+[
+  {
+    "name": "B.Ezenbaatar",
+    "nickname": "ezka",
+    "description": "Leader"
+  },
+  {
+    "name": "G.Zolboobayar",
+    "nickname": "oleg",
+    "description": "Developer"
+  },
+  {
+    "name": "E.Munkh-Javhlan",
+    "nickname": "javkhaa",
+    "description": "Developer"
+  },
+  {
+    "name": "B.Enkhjin",
+    "nickname": "enhjin",
+    "description": "Animator, designer"
+  },
+  {
+    "name": "E.Erdemtugs",
+    "nickname": "erdmee",
+    "description": "Designer, researcher"
+  },
+  {
+    "name": "B.Shijirbum",
+    "nickname": "shijka",
+    "description": "Researcher"
+  },
+  {
+    "name": "A.Gulnur",
+    "nickname": "gulnvr",
+    "description": "Animator, designer"
+  },
+  {
+    "name": "M.Khongorzul",
+    "nickname": "kongro",
+    "description": "Animator, designer"
+  }
+]
