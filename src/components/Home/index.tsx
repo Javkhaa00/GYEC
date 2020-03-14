@@ -45,7 +45,7 @@ const ArrowContainer = styled.div`
   justify-content: center;
 `;
 
-function Header() {
+function Home() {
   return (
     <Container>
       <NavBar />
@@ -60,4 +60,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Home;
