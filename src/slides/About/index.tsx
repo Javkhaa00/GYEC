@@ -51,7 +51,7 @@ const teamMembers = [
 ];
 function About() {
   return (
-    <Container>
+    <Container id="about">
       <Title>About us</Title>
       <Description>
         We are a bunch mixed high school students from different schools who are
