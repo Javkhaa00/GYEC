@@ -46,7 +46,9 @@ function About() {
       </Description>
       <MemberList>
         {groupToPairs(
-          teamMembers.map(member => <TeamMember data={member} />),
+          teamMembers.map(member => (
+            <TeamMember key={member.nickname} data={member} />
+          )),
         ).map((children, i) => (
           <Col key={i.toString()}>{children}</Col>
         ))}
