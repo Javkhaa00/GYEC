@@ -23,7 +23,7 @@ const Title = styled.h1`
 
 function Product() {
   return (
-    <Slide>
+    <Slide id="product">
       <ProductNameContainer>
         <Slogan>You never sleep when you have</Slogan>
         <Title>Shocklance</Title>
