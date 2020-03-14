@@ -18,9 +18,11 @@ const Grid = styled.div`
   grid-template-rows: 2fr 2fr;
   grid-area: grid;
 `;
-const Pictures = styled.img`
-  height: 45%;
-  width: 80%;
+
+const MemberPicture = styled.img`
+  --picture-size: 200px;
+  height: var(--picture-size);
+  width: var(--picture-size);
 `;
 
 const teamMembers = [
@@ -39,7 +41,7 @@ function About() {
       <Wrapper>
         <Grid>
           {teamMembers.map(member => (
-            <Pictures src={`/assets/members/${member}.jpg`} />
+            <MemberPicture src={`/assets/members/${member}.jpg`} />
           ))}
         </Grid>
       </Wrapper>
