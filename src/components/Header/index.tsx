@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Arrow from '@/components/Arrow';
 import NavBar from '@/components/NavBar';
 
 const Container = styled.div`
@@ -37,6 +38,13 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
+const ArrowContainer = styled.div`
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+`;
+
 function Header() {
   return (
     <Container>
@@ -45,6 +53,9 @@ function Header() {
         <Title>Nani</Title>
         <Title>Tech</Title>
       </TitleContainer>
+      <ArrowContainer>
+        <Arrow />
+      </ArrowContainer>
     </Container>
   );
 }
