@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { groupToPairs } from '@/util';
-
 import Slide from '@/components/Slide';
 
 import teamMembers from './members.json';
@@ -31,11 +29,6 @@ const Description = styled.h3`
   font-weight: 700;
 `;
 
-const Col = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-`;
-
 function About() {
   return (
     <Container id="about">
@@ -45,12 +38,8 @@ function About() {
         trying to decrease human injuries and increase work power of people.
       </Description>
       <MemberList>
-        {groupToPairs(
-          teamMembers.map(member => (
-            <TeamMember key={member.nickname} data={member} />
-          )),
-        ).map((children, i) => (
-          <Col key={i.toString()}>{children}</Col>
+        {teamMembers.map(member => (
+          <TeamMember key={member.nickname} data={member} />
         ))}
       </MemberList>
     </Container>
