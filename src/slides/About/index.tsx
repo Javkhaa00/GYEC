@@ -10,16 +10,6 @@ const Wrapper = styled.section`
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 'grid grid grid grid' 'grid grid grid grid';
 `;
-const assets = [
-  '/assets/members/ezka.jpg',
-  '/assets/members/oleg.jpg',
-  '/assets/members/javkhaa.jpg',
-  '/assets/members/enhjin.jpg',
-  '/assets/members/erdmee.jpg',
-  '/assets/members/shijka.jpg',
-  '/assets/members/gulnvr.jpg',
-  '/assets/members/kongro.jpg',
-];
 const Grid = styled.div`
   display: grid;
   align-items: center;
@@ -33,13 +23,23 @@ const Pictures = styled.img`
   width: 80%;
 `;
 
+const teamMembers = [
+  'ezka',
+  'oleg',
+  'javkhaa',
+  'enhjin',
+  'erdmee',
+  'shijka',
+  'gulnvr',
+  'kongro',
+];
 function About() {
   return (
     <>
       <Wrapper>
         <Grid>
-          {assets.map(member => (
-            <Pictures src={member} />
+          {teamMembers.map(member => (
+            <Pictures src={`/assets/members/${member}.jpg`} />
           ))}
         </Grid>
       </Wrapper>
