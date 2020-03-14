@@ -37,15 +37,13 @@ const teamMembers = [
 ];
 function About() {
   return (
-    <>
-      <Wrapper>
-        <Grid>
-          {teamMembers.map(member => (
-            <MemberPicture src={`/assets/members/${member}.jpg`} />
-          ))}
-        </Grid>
-      </Wrapper>
-    </>
+    <Wrapper>
+      <Grid>
+        {teamMembers.map(member => (
+          <MemberPicture src={`/assets/members/${member}.jpg`} />
+        ))}
+      </Grid>
+    </Wrapper>
   );
 }
 
