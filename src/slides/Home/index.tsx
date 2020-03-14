@@ -39,7 +39,7 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-const ArrowContainer = styled.div`
+const ArrowContainer = styled.a`
   width: 100%;
   height: 75px;
   display: flex;
@@ -54,7 +54,7 @@ function Home() {
         <Title>Nani</Title>
         <Title>Tech</Title>
       </TitleContainer>
-      <ArrowContainer>
+      <ArrowContainer href="#product">
         <Arrow />
       </ArrowContainer>
     </Container>
