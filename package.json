@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@nicepack/core": "^0.3.3",
-    "@nicepack/eslint-ts": "^1.0.0",
+    "@nicepack/eslint-ts": "^1.0.1",
     "@nicepack/typescript": "^1.0.1",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
