@@ -13,8 +13,9 @@
     "trailingComma": "all"
   },
   "devDependencies": {
-    "@nicepack/core": "^0.3.3",
+    "@nicepack/core": "^0.3.4",
     "@nicepack/eslint-ts": "^1.0.1",
+    "@nicepack/react": "^1.2.7",
     "@nicepack/typescript": "^1.0.1",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
@@ -30,7 +31,6 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "@nicepack/react": "^1.2.5",
     "core-js": "^2.6.11",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

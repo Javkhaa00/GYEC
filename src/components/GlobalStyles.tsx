@@ -5,6 +5,7 @@ export default createGlobalStyle`
   
   :root {
     --slide-height: calc(100vw * 0.525716258198136);
+    --primary-color: #19acbe;
   }
   
   html,
@@ -15,7 +16,7 @@ export default createGlobalStyle`
   }
   
   body,
-  h1 {
+  h1, h3 {
     margin: 0;
   }
   
