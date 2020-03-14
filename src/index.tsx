@@ -11,8 +11,8 @@ function App() {
     <>
       <GlobalStyles />
       <Home />
-      <About />
       <Product />
+      <About />
     </>
   );
 }
