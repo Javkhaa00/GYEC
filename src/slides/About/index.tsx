@@ -1,9 +1,8 @@
 import React from 'react';
+import Slide from '@/components/Slide';
 import styled from 'styled-components';
 
-const Wrapper = styled.section`
-  min-height: var(--slide-height);
-  width: 100vw;
+const Container = styled(Slide)`
   background-color: var(--primary-color);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -37,13 +36,13 @@ const teamMembers = [
 ];
 function About() {
   return (
-    <Wrapper>
+    <Container>
       <Grid>
         {teamMembers.map(member => (
           <MemberPicture src={`/assets/members/${member}.jpg`} />
         ))}
       </Grid>
-    </Wrapper>
+    </Container>
   );
 }
 
