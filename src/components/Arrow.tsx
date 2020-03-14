@@ -5,6 +5,11 @@ const ArrowBox = styled.svg`
   width: 30px;
   height: 65px;
   margin-bottom: 10px;
+  @media screen and (max-width: 550px) {
+    width: 15px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
 `;
 
 function Arrow() {
