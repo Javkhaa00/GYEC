@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Arrow from '@/components/Arrow';
 import NavBar from '@/components/NavBar';
 
-const Container = styled.div`
+const Container = styled.section`
   width: 100%;
   color: white;
   height: var(--slide-height);

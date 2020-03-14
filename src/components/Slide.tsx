@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.div`
+export default styled.section`
   width: 100%;
   height: var(--slide-height);
   background-color: white;
