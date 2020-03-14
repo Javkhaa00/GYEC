@@ -8,10 +8,17 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 550px) {
+    padding: 0 10px;
+  }
 `;
 const Logo = styled.img`
   width: 55px;
   height: 35px;
+  @media screen and (max-width: 550px) {
+    width: 30px;
+    height: 20px;
+  }
 `;
 
 const Navigation = styled.nav`
@@ -24,6 +31,10 @@ const Navigation = styled.nav`
     outline: none;
     font-weight: 600;
     text-decoration: none;
+    @media screen and (max-width: 550px) {
+      margin: 0 5px;
+      font-size: 0.7rem;
+    }
   }
 `;
 
