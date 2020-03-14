@@ -22,6 +22,11 @@ export default createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+
+  a {
+    outline: none;
+    text-decoration: none;
+  }
   
   body {
     font-family: Raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
