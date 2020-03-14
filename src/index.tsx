@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
 import useFastReloadIndicator from '@nicepack/react/indicator';
+
+import GlobalStyles from './components/GlobalStyles';
+import Home from './slides/Home';
 
 function App() {
   return (
     <>
-      <h2>HI MY PREEND</h2>
-      <p>Hello, world!</p>
+      <GlobalStyles />
+      <Home />
     </>
   );
 }
