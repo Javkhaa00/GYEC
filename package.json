@@ -13,7 +13,7 @@
     "trailingComma": "all"
   },
   "devDependencies": {
-    "@nicepack/core": "^0.3.3",
+    "@nicepack/core": "^0.3.4",
     "@nicepack/eslint-ts": "^1.0.1",
     "@nicepack/react": "^1.2.7",
     "@nicepack/typescript": "^1.0.1",
