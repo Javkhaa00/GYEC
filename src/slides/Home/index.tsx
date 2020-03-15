@@ -13,8 +13,8 @@ const Container = styled.section`
   background-position: center center;
   background-image: linear-gradient(
       to bottom,
-      rgba(25, 172, 190, 0.4),
-      rgba(25, 172, 190, 0.4)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
     url('/assets/watch.png');
 
