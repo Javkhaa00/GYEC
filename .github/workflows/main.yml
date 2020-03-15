@@ -37,3 +37,16 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+  audit:
+    name: Audit
+    runs-on: ubuntu-latest
+    steps:
+    - name: Audit live URL
+      uses: jakejarvis/lighthouse-action@master
+      with:
+        url: 'https://nani-tech.web.app'
+    - name: Upload results as an artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: report
+        path: './report'
