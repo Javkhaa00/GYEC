@@ -42,7 +42,6 @@ export default class MyDocument extends Document {
           />
           <meta name="description" content="Slocklance product presentation." />
           <meta name="robots" content="index, follow" />
-          <title>Nani Tech</title>
         </Head>
         <body>
           <Main />

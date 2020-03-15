@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 import GlobalStyles from '@/components/GlobalStyles';
 import Home from '@/slides/Home';
@@ -9,6 +10,9 @@ import ContactUs from '@/slides/ContactUs';
 function App() {
   return (
     <>
+      <Head>
+        <title>Nani Tech</title>
+      </Head>
       <GlobalStyles />
       <Home />
       <Product />
