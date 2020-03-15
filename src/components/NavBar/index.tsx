@@ -1,5 +1,7 @@
+// @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
+import { useAmp } from 'next/amp';
 
 const Container = styled.div`
   width: 100%;
@@ -37,10 +39,15 @@ const Navigation = styled.nav`
 `;
 
 function NavBar() {
+  const amp = useAmp();
   return (
     <Container>
       <a href="#home">
-        <Logo alt="Logo" src="/assets/logo.png" />
+        {amp ? (
+          <amp-img alt="Logo" height="35" width="55" src="/assets/logo.png" />
+        ) : (
+          <Logo alt="Logo" src="/assets/logo.png" />
+        )}
       </a>
       <Navigation>
         <a href="#home">Home</a>

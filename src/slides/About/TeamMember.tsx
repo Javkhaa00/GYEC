@@ -1,6 +1,9 @@
+// @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+
+import { useAmp } from 'next/amp';
 
 type TeamMemberData = {
   name: string;
@@ -58,19 +61,31 @@ const Name = styled.span`
   font-size: 1.3rem;
 `;
 
-const TeamMember: React.FC<{ data: TeamMemberData }> = ({ data }) => (
-  <Container>
-    <MemberPicture
-      key={data.nickname}
-      alt={data.nickname}
-      src={`/assets/members/${data.nickname}.jpg`}
-    />
-    <MemberDescription>
-      <p>{data.description}</p>
-      <Name>{data.name}</Name>
-    </MemberDescription>
-  </Container>
-);
+const TeamMember: React.FC<{ data: TeamMemberData }> = ({ data }) => {
+  const amp = useAmp();
+  return (
+    <Container>
+      {amp ? (
+        <amp-img
+          width="200"
+          height="200"
+          alt={data.nickname}
+          src={`/assets/members/${data.nickname}.jpg`}
+        />
+      ) : (
+        <MemberPicture
+          key={data.nickname}
+          alt={data.nickname}
+          src={`/assets/members/${data.nickname}.jpg`}
+        />
+      )}
+      <MemberDescription>
+        <p>{data.description}</p>
+        <Name>{data.name}</Name>
+      </MemberDescription>
+    </Container>
+  );
+};
 TeamMember.propTypes = {
   data: PropTypes.exact({
     name: PropTypes.string.isRequired,
