@@ -13,7 +13,14 @@ function App() {
   return (
     <>
       <Head>
-        <title>Nani Tech</title>
+        <meta name="description" content="Shocklance will prevent you from falling asleep, guaranteeing your life. Also, Shocklance will help late night students and night shift workers." />
+        <meta property="og:description" content="Shocklance will prevent you from falling asleep, guaranteeing your life. Also, Shocklance will help late night students and night shift workers." />
+        <meta property="og:type" content="product.item" />
+        <meta property="og:title" content="Shocklance" />
+        <meta property="og:determiner" content="the" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Shocklance" />
+        <title>Shocklance</title>
       </Head>
       <GlobalStyles />
       <Home />
