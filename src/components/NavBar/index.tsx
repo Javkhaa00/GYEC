@@ -16,11 +16,11 @@ const Container = styled.div`
   }
 `;
 const Logo = styled.img`
-  width: 35px;
-  height: 40px;
-  @media screen and (max-width: 550px) {
-    width: 25px;
-    height: 30px;
+  width: 43px;
+  height: 50px;
+  @media screen and (max-width: 950px) {
+    width: 35px;
+    height: 40px;
   }
 `;
 
