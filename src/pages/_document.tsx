@@ -36,10 +36,6 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
           <meta name="description" content="Slocklance product presentation." />
           <meta name="robots" content="index, follow" />
         </Head>
