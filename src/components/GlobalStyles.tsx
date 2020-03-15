@@ -3,7 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   :root {
     --slide-height: calc(100vw * 0.525716258198136);
+    --dark-color: #1e1d1d;
     --primary-color: #19acbe;
+    --secondary-color: #49cdb5;
   }
   
   html,
