@@ -11,15 +11,16 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   @media screen and (max-width: 550px) {
-    padding: 0 10px;
+    height: 60px;
+    padding: 0 15px;
   }
 `;
 const Logo = styled.img`
-  width: 55px;
-  height: 35px;
+  width: 35px;
+  height: 40px;
   @media screen and (max-width: 550px) {
-    width: 30px;
-    height: 20px;
+    width: 25px;
+    height: 30px;
   }
 `;
 
@@ -44,7 +45,7 @@ function NavBar() {
     <Container>
       <a href="#home">
         {amp ? (
-          <amp-img alt="Logo" height="35" width="55" src="/assets/logo.png" />
+          <amp-img alt="Logo" height="40" width="35" src="/assets/logo.png" />
         ) : (
           <Logo alt="Logo" src="/assets/logo.png" />
         )}
