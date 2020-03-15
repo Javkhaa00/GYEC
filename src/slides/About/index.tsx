@@ -35,8 +35,9 @@ function About() {
     <Container id="about">
       <Title>About us</Title>
       <Description>
-        We are a bunch mixed high school students from different schools who are
-        trying to decrease human injuries and increase work power of people.
+        We are a group of high school students who are dedicated to creating
+        innovative solutions to the problems the world faces today. Our goal is
+        not just to make a slight change, but also to build the future we want.
       </Description>
       <MemberList>
         {teamMembers.map(member => (
