@@ -1,6 +1,8 @@
+// @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { useAmp } from 'next/amp';
 
 const Container = styled.div`
   width: 230px;
@@ -40,17 +42,24 @@ const Feature: React.FC<{
   icon: string;
   title: string;
   description: string;
-}> = ({ icon, title, description }) => (
-  <Container>
-    <IconContainer>
-      <img alt={title} src={icon} />
-    </IconContainer>
-    <Details>
-      <Title>{title}</Title>
-      <Description>{description}</Description>
-    </Details>
-  </Container>
-);
+}> = ({ icon, title, description }) => {
+  const amp = useAmp();
+  return (
+    <Container>
+      <IconContainer>
+        {amp ? (
+          <amp-img width="30" height="30" alt={title} src={icon} />
+        ) : (
+          <img alt={title} src={icon} />
+        )}
+      </IconContainer>
+      <Details>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
+      </Details>
+    </Container>
+  );
+};
 
 Feature.propTypes = {
   icon: PropTypes.string.isRequired,

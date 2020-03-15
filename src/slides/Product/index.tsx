@@ -1,5 +1,7 @@
+// @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
+import { useAmp } from 'next/amp';
 
 import Slide from '@/components/Slide';
 import Button from '@/components/Button';
@@ -53,6 +55,7 @@ const ProductPicture = styled.img`
 `;
 
 function Product() {
+  const amp = useAmp();
   return (
     <Slide id="product">
       <ProductNameContainer>
@@ -60,10 +63,19 @@ function Product() {
         <Title>Shocklance</Title>
       </ProductNameContainer>
       <ProductContainer>
-        <ProductPicture alt="Shocklance" src="/assets/shocklance.png" />
+        {amp ? (
+          <amp-img
+            width="400"
+            height="400"
+            alt="Shocklance"
+            src="/assets/shocklance.png"
+          />
+        ) : (
+          <ProductPicture alt="Shocklance" src="/assets/shocklance.png" />
+        )}
         <FeaturesColumn>
           <Feature
-            icon="/assets/features/voltage.svg"
+            icon="/assets/features/energy.png"
             title="20V"
             description="But I must explain to you how all this mistaken idea of denouncing pleasure and praising."
           />
