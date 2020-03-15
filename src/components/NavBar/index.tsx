@@ -40,7 +40,7 @@ function NavBar() {
   return (
     <Container>
       <a href="#home">
-        <Logo src="/assets/logo.png" />
+        <Logo alt="Logo" src="/assets/logo.png" />
       </a>
       <Navigation>
         <a href="#home">Home</a>
