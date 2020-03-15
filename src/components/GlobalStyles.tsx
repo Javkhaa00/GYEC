@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-  
   :root {
     --slide-height: calc(100vw * 0.525716258198136);
     --primary-color: #19acbe;

@@ -36,8 +36,16 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-          <meta name="description" content="Slocklance product presentation." />
+          <meta name="description" content="Slocklance product presentation" />
           <meta name="robots" content="index, follow" />
+          <meta
+            name="google-site-verification"
+            content="jD3cFLIHKgkDoG49_aVp9iFDXcLNu0N77HXobKQjEu4"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
