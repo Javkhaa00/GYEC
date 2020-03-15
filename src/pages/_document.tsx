@@ -38,6 +38,10 @@ export default class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           <meta name="description" content="Slocklance product presentation." />
           <meta name="robots" content="index, follow" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
