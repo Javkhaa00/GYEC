@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
 
@@ -9,9 +8,8 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  @media screen and (max-width: 550px) {
-    height: 60px;
-    padding: 0 15px;
+  @media screen and (max-width: 900px) {
+    display: none;
   }
 `;
 
@@ -23,10 +21,6 @@ const Navigation = styled.nav`
     color: white;
     margin: 0 15px;
     font-weight: 600;
-    @media screen and (max-width: 550px) {
-      margin: 0 5px;
-      font-size: 0.7rem;
-    }
   }
 `;
 
