@@ -7,6 +7,8 @@ import About from '@/slides/About';
 import Product from '@/slides/Product';
 import ContactUs from '@/slides/ContactUs';
 
+export const config = { amp: 'hybrid' };
+
 function App() {
   return (
     <>
