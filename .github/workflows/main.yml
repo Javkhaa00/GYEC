@@ -38,6 +38,7 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
   audit:
+    name: Audit
     runs-on: ubuntu-latest
     steps:
     - name: Audit live URL
