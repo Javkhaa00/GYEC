@@ -60,7 +60,7 @@ function Product() {
         <Title>Shocklance</Title>
       </ProductNameContainer>
       <ProductContainer>
-        <ProductPicture src="/assets/shocklance.png" />
+        <ProductPicture alt="Shocklance" src="/assets/shocklance.png" />
         <FeaturesColumn>
           <Feature
             icon="/assets/features/voltage.svg"

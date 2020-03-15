@@ -62,6 +62,7 @@ const TeamMember: React.FC<{ data: TeamMemberData }> = ({ data }) => (
   <Container>
     <MemberPicture
       key={data.nickname}
+      alt={data.nickname}
       src={`/assets/members/${data.nickname}.jpg`}
     />
     <MemberDescription>
