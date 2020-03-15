@@ -1,7 +1,8 @@
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { useAmp } from 'next/amp';
+
+import Logo from '@/components/Logo';
 
 const Container = styled.div`
   width: 100%;
@@ -13,14 +14,6 @@ const Container = styled.div`
   @media screen and (max-width: 550px) {
     height: 60px;
     padding: 0 15px;
-  }
-`;
-const Logo = styled.img`
-  width: 43px;
-  height: 50px;
-  @media screen and (max-width: 950px) {
-    width: 35px;
-    height: 40px;
   }
 `;
 
@@ -40,16 +33,9 @@ const Navigation = styled.nav`
 `;
 
 function NavBar() {
-  const amp = useAmp();
   return (
     <Container>
-      <a href="#home">
-        {amp ? (
-          <amp-img alt="Logo" height="40" width="35" src="/assets/logo.png" />
-        ) : (
-          <Logo alt="Logo" src="/assets/logo.png" />
-        )}
-      </a>
+      <Logo />
       <Navigation>
         <a href="#home">Home</a>
         <a href="#product">Product</a>
