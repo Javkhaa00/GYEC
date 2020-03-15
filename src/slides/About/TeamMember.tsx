@@ -15,13 +15,14 @@ const Container = styled.div`
   width: 200px;
   height: 250px;
   margin: 30px;
+  > img,
+  amp-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
 `;
 
-const MemberPicture = styled.img`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-`;
 const MemberDescription = styled.div`
   display: flex;
   align-items: center;
@@ -51,7 +52,7 @@ const TeamMember: React.FC<{ data: TeamMemberData }> = ({ data }) => {
           src={`/assets/members/${data.nickname}.jpg`}
         />
       ) : (
-        <MemberPicture
+        <img
           key={data.nickname}
           alt={data.nickname}
           src={`/assets/members/${data.nickname}.jpg`}
