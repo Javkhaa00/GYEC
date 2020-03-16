@@ -8,12 +8,11 @@ import TeamMember from './TeamMember';
 
 const Container = styled(Slide)`
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
 `;
 
 const MemberList = styled.div`
   display: flex;
-  max-width: 900px;
   flex-flow: row wrap;
   justify-content: center;
 `;

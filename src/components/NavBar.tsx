@@ -1,7 +1,5 @@
-// @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { useAmp } from 'next/amp';
 
 const Container = styled.div`
   width: 100%;
@@ -9,18 +7,9 @@ const Container = styled.div`
   padding: 0 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  @media screen and (max-width: 550px) {
-    height: 60px;
-    padding: 0 15px;
-  }
-`;
-const Logo = styled.img`
-  width: 35px;
-  height: 40px;
-  @media screen and (max-width: 550px) {
-    width: 25px;
-    height: 30px;
+  justify-content: flex-end;
+  @media screen and (max-width: 900px) {
+    display: none;
   }
 `;
 
@@ -32,24 +21,12 @@ const Navigation = styled.nav`
     color: white;
     margin: 0 15px;
     font-weight: 600;
-    @media screen and (max-width: 550px) {
-      margin: 0 5px;
-      font-size: 0.7rem;
-    }
   }
 `;
 
 function NavBar() {
-  const amp = useAmp();
   return (
     <Container>
-      <a href="#home">
-        {amp ? (
-          <amp-img alt="Logo" height="40" width="35" src="/assets/logo.png" />
-        ) : (
-          <Logo alt="Logo" src="/assets/logo.png" />
-        )}
-      </a>
       <Navigation>
         <a href="#home">Home</a>
         <a href="#product">Product</a>

@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "/index.amp",
+        "destination": "/index.amp.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

@@ -11,7 +11,7 @@ const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: 800;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     font-size: 1.5rem;
   }
 `;
@@ -24,7 +24,7 @@ const ContactContainer = styled.div`
   > span {
     margin-right: 15px;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     font-size: 0.9rem;
     > span {
       margin-right: 5px;
