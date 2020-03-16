@@ -1,11 +1,9 @@
 name: Build and Deploy
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/master'
     name: Build
     runs-on: ubuntu-latest
     steps:
@@ -39,14 +37,15 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
   audit:
     name: Audit
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Audit live URL
-      uses: jakejarvis/lighthouse-action@master
-      with:
-        url: 'https://nani-tech.web.app'
-    - name: Upload results as an artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: report
-        path: './report'
+      - name: Audit live URL
+        uses: jakejarvis/lighthouse-action@master
+        with:
+          url: 'https://nani-tech.web.app'
+      - name: Upload results as an artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: report
+          path: './report'
