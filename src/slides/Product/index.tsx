@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { useAmp } from 'next/amp';
 
 import Slide from '@/components/Slide';
 import Button from '@/components/Button';
 
 import Feature from './Feature';
+import ProductPicture from './ProductPicture';
 
 const ProductNameContainer = styled.div`
   width: 100%;
@@ -39,23 +39,8 @@ const FeaturesColumn = styled.div`
   flex-direction: column;
   justify-content: space-between;
 `;
-const ProductPicture = styled.img`
-  margin: 0 15px 15px 0;
-  display: block;
-  max-width: 400px;
-  background-image: url('/assets/shocklance.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media screen and (max-width: 500px) {
-    max-width: calc(100vw - 80px);
-    margin-bottom: 10px;
-  }
-`;
 
 function Product() {
-  const amp = useAmp();
   return (
     <Slide id="product">
       <ProductNameContainer>
@@ -63,16 +48,7 @@ function Product() {
         <Title>Shocklance</Title>
       </ProductNameContainer>
       <ProductContainer>
-        {amp ? (
-          <amp-img
-            width="400"
-            height="400"
-            alt="Shocklance"
-            src="/assets/shocklance.png"
-          />
-        ) : (
-          <ProductPicture alt="Shocklance" src="/assets/shocklance.png" />
-        )}
+        <ProductPicture />
         <FeaturesColumn>
           <Feature
             icon="/assets/features/energy.png"
